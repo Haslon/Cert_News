@@ -1,0 +1,418 @@
+@font-face {
+    font-family: Oswald-Bold;
+    src: url('../Deportes/fonts/Oswald-Bold.ttf');
+}
+
+@font-face {
+    font-family: Oswald-ExtraLight;
+    src: url('./fonts/Oswald-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: Oswald-Light;
+    src: url('./fonts/Oswald-Light.ttf');
+}
+
+@font-face {
+    font-family: Oswald-Medium;
+    src: url('./fonts/Oswald-Medium.ttf');
+}
+
+@font-face {
+    font-family: Oswald-Regular;
+    src: url('../Deportes/fonts/Oswald-Regular.ttf');
+
+}
+@font-face {
+    font-family: Oswald-SemiBold;
+    src: url('./fonts/Oswald-SemiBold.ttf');
+}
+
+body{
+    background-image: linear-gradient(to right top, #29c494, #00c4af, #00c3c6, #00c1d8, #00bde5, #4bc0ee, #6fc2f4, #8cc5f8, #b5d1fb, #d4dffc, #edeefd, #ffffff);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: Oswald-Regular;
+}
+
+
+#main-nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-image: url(https://aliatuniversidades.com.mx/blog/wp-content/uploads/2022/04/que-es-el-derecho-politico.jpg);/*Aqui cambian por la imagen de Fondo*/
+    background-position: 95%;
+    background-size: cover;
+    
+    
+    
+    height: 120px;
+    border-radius: 40px;
+    margin: 10px 20px;
+    padding: 0 30px;
+    
+    padding-top: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    padding: 15px;
+    border-radius: 20px;
+    width: 1124px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 15px 50px #000;
+    background-color: #fff;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.nav__logo{
+    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: -10px;
+    transform: scale(1.2);
+}
+
+.nav__bar{
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 0 5px;
+}
+
+.nav__bar > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    background-size: cover;
+}
+
+
+.nav__logo a > img{
+    width: 150px;
+    height: 80px;
+}
+
+.seccion-links{
+    background-color: gray;
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    color: #fff;
+    
+}
+
+.seccion-links > a{
+   margin-right: 10px;
+    font-weight: bold;
+   color: #fff;
+}
+
+.login{
+    text-align: right;
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav__login{
+    width: 60px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.nav__login-user{
+    display: inline-block;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    background-image: url(./Assets/icons8-usuario-masculino-en-círculo-64.png);
+    background-size: contain;
+}
+
+.log{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.nav__social-media{
+    padding-top: 4px;
+    padding-left: -3px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-left: 90%;
+    background: right;
+}
+
+.nav__social-media > img{
+   width: 40px;
+   height: 40px;
+   background-size: 20px;
+   border-radius: 20px;
+   margin-left: 10px;
+}
+
+.nav__social-media + span{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 45px;
+    font-size: 20px;
+    font-weight:normal;
+}
+
+/*Sección News-feed*/
+
+
+
+#news-feed .row .left-col{ 
+    width: 65%;
+}
+
+#news-feed .row .right-col{
+    width: 35%; 
+}
+
+#news-feed article{
+    display: flex;
+    flex-direction: column;
+    padding-right: 3%;
+    height: 100%;
+}
+
+
+#news-feed .row .left-col article{
+    height: 100%;
+}
+
+#news-feed .row .right-col article{
+    height: 50%;
+}
+
+#news-feed h1{
+    flex-grow: 1;
+    margin: 25px 0 20px 0;
+    font-family: Oswald-Bold, sans-serif;
+    font-size: 36px;
+}
+
+#news-feed h2{
+    color: black;
+    font-family: Oswald-Bold, sans-serif;
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+#news-feed p{
+    font-family: Oswald-Light, sans-serif;
+    font-size: 20px;
+    color: gray;
+}
+
+#news-feed figure{
+    position: relative;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+#news-feed figure img{
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgrey;
+}
+
+#news-feed .row .col figure img{
+    max-width: 450px;
+    max-height: 300px;
+}
+
+#news-feed figure figcaption{
+    width: auto;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: Oswald-Bold, sans-serif;
+    background: rgba(0, 0, 0, 0.6);
+
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+}
+
+#news-feed figure:hover figcaption{
+    background: black;
+}
+
+#news-feed figure figcaption span{
+    color: white;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    min-width: 1124px;
+    width: 100%;
+    background: rgb(245, 245, 245);
+
+    height: 300px;
+}
+
+footer .topbar{
+    display: flex;
+    width: 100%;
+    height: 85px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+
+footer .topbar img{
+    width: 150px;
+}
+
+footer .topbar .redes{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+}
+
+footer .topbar .redes i{
+    color: rgb(60, 60, 60);
+    margin-right: 12px;
+    font-size: 22px;
+}
+
+footer .sitemap{
+    display: flex;
+    width: 100%;
+}
+
+footer .sitemap .col{
+    width: 25%;
+    padding-left: 25px;
+}
+
+footer .sitemap ul{
+    padding: 0%;
+    list-style-type: none;
+}
+
+footer .sitemap ul li{
+    font-family: Oswald-Regular, sans-serif;
+    font-size: 14px;
+    margin: 0 0 15px;
+}
+
+footer .sitemap ul li span{
+    color: rgb(60, 60, 60);
+    font-family: Oswald-Bold, sans-serif;
+}
+
+footer .sitemap ul li a{
+    color: gray;
+    text-decoration: none;
+}
+
+footer .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    font-family: Oswald-Regular, sans-serif;
+    font-size: 14px;
+    color: rgb(60, 60, 60);
+}
+
+/* POST */
+
+#post article{
+    display: flex;
+    flex-direction: column;
+}
+
+#post .label{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#post .label span{
+    font-size: 24px;
+    font-family: Oswald-Bold, sans-serif;
+    color: rgb(73, 73, 250);
+    margin-right: 15px;
+}
+
+#post h1{
+    color: #000;
+    font-family: Oswald-Bold, sans-serif;
+    font-size: 38px;
+    margin: 25px 0;
+}
+
+#post h2{
+    color: rgb(80, 80, 80);
+    font-family: Oswald-ExtraLight, sans-serif;
+    font-size: 23px;
+}
+
+#post .redes{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0;
+}
+
+#post .redes .color-fbk { color: rgb(42, 110, 227); }
+#post .redes .color-twitter { color: rgb(42, 171, 227); }
+
+#post .redes i{
+    margin: 0 20px;
+}
+
+#post figure{
+    margin: 0;
+}
+
+#post figure figcaption{
+    color: grey;
+    font-size: 14px;
+    font-family: Oswald-Regular, sans-serif;
+    margin: 10px 0;
+    max-width: 750px;
+}
+
+#post img{
+    width: 100%;
+    max-width: 750px;
+}
+
+#post p{
+    max-width: 750px;
+    font-size: 18px;
+    font-family: Oswald-Regular, sans-serif;
+    color: rgb(80, 80, 80);
+    line-height: 30px;
+}
